@@ -1,28 +1,253 @@
+/* Reset básico e Variáveis */
+:root {
+  --primary-color: #823635; /* Vermelho Bastard */
+  --secondary-color: #b8860b; /* Dourado Kaiser */
+  --bg-color: #121212; /* Fundo escuro */
+  --card-bg: #1e1e1e; /* Fundo dos cards */
+  --text-color: #e0e0e0;
+  --text-muted: #a0a0a0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Header e Navegação */
+header {
+  background-color: #000;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 3px solid var(--primary-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+}
+
+/* Seções Gerais */
 .section {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   padding: 40px;
-  border: 2px solid #823635;
-  background-color: #ffffff;
-  border-radius: 24px;
-  box-shadow: 0 10px 30px rgba(55, 56, 55, 0.15);
-  max-width: 600px;
+  border: 1px solid #333;
+  border-top: 4px solid var(--primary-color);
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  max-width: 900px;
   margin: 2rem auto;
-  color: #373837;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
 }
+
 .section:hover {
   transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(130, 54, 53, 0.25);
+  box-shadow: 0 20px 40px rgba(130, 54, 53, 0.15);
 }
+
+h2 {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Cards de Jogadores */
+.players-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.player-card {
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  border: 1px solid #444;
+  transition:
+    transform 0.3s,
+    border-color 0.3s;
+}
+
+.player-card:hover {
+  transform: scale(1.05);
+  border-color: var(--secondary-color);
+}
+
 .profilePic {
+<<<<<<< Updated upstream
   width: 200px;
   height: 200px;
   border-radius: 100%;
   object-fit: cover;
   object-position: 50% 0px;
+=======
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  margin: 0 auto 15px auto;
+  border: 3px solid var(--primary-color);
+}
+
+.player-card figcaption {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.player-card ul {
+  list-style: none;
+  text-align: left;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Estilo específico para Wishlist */
+.wishlist-card .profilePic {
+  border-color: var(--secondary-color); /* Borda dourada para os sonhos */
+  filter: grayscale(30%); /* Um pouco desaturado até entrarem no time */
+}
+
+/* Vídeo */
+.video {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+iframe {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Formulário */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  margin-bottom: 5px;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: #fff;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+}
+
+.form-group-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.submit-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #a04040;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #888;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  border-top: 1px solid #333;
+}
+
+footer a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+footer address {
+  font-style: normal;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+>>>>>>> Stashed changes
 }
