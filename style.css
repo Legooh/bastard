@@ -118,13 +118,6 @@ h2 {
 }
 
 .profilePic {
-<<<<<<< Updated upstream
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
-  object-fit: cover;
-  object-position: 50% 0px;
-=======
   width: 120px;
   height: 120px;
   border-radius: 100%;
@@ -249,5 +242,4 @@ footer address {
   font-style: normal;
   margin-bottom: 1rem;
   line-height: 1.8;
->>>>>>> Stashed changes
 }
