@@ -1,168 +1,21 @@
 <!doctype html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blue Lock - Bastard München</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Elenco oficial Bastard München — Blue Lock"><title>Bastard München | v0.3</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{bastard:'#9d1c2e',gold:'#f6c453',ink:'#09090b'}}}}</script>
 </head>
-
-<body>
-  <header>
-    <h1>Bastard München</h1>
-    <nav>
-      <ul>
-        <li><a href="#jogadores">Jogadores</a></li>
-        <li><a href="#wishlist">Reforços</a></li>
-        <li><a href="#desempenho">Desempenho</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="intro" class="section">
-      <h2>Rap Bastard (Blue Lock)</h2>
-      <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Y-c6a7U7gxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-    </section>
-
-    <section id="jogadores" class="section">
-      <h2>Jogadores</h2>
-      <div class="players-container">
-        <!-- Primeiro jogador -->
-        <article class="player-card">
-          <figure>
-            <img class="profilePic" src="https://i.pinimg.com/736x/4e/06/f8/4e06f87ee0764cfcde9886990c8c9a01.jpg" alt="Foto de Michael Kaiser" />
-            <figcaption>Michael Kaiser</figcaption>
-          </figure>
-          <ul>
-            <li>Posição: Atacante</li>
-            <li>Apelido: Imperador</li>
-            <li>Nacionalidade: Alemanha</li>
-          </ul>
-        </article>
-
-        <!-- Segundo jogador -->
-        <article class="player-card">
-          <figure>
-            <img class="profilePic" src="https://i.pinimg.com/736x/5a/06/c5/5a06c54c974f8702f6a2acc5349860b8.jpg" alt="Foto de Yoichi Isagi" />
-            <figcaption>Yoichi Isagi</figcaption>
-          </figure>
-          <ul>
-            <li>Posição: Atacante</li>
-            <li>Apelido: Egoísta</li>
-            <li>Nacionalidade: Japão</li>
-          </ul>
-        </article>
-
-  </div>
-        <!-- Terceiro jogador -->
-        <article class="player-card">
-          <figure>
-            <img class="profilePic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf6RBOYbZmfn7z7SvPgP83qeVkox1SvQY7DQ&s" alt="Foto de Rensuke Kunigami" />
-            <figcaption>Rensuke Kunigami</figcaption>
-          </figure>
-          <ul>
-            <li>Posição: Atacante</li>
-            <li>Apelido: Herói Caído</li>
-            <li>Nacionalidade: Japão</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="wishlist" class="section">
-      <h2>Contratações dos Sonhos</h2>
-      <p>Jogadores que trariam o caos necessário para a evolução lógica do time.</p>
-      <div class="players-container">
-        <article class="player-card wishlist-card">
-          <figure>
-            <img class="profilePic" src="https://i.ytimg.com/vi/4bf0GW5KQnE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD2eN88_xN6CzBT93cmHaXRDUPuog" alt="Itoshi Rin" />
-            <figcaption>Itoshi Sae</figcaption>
-          </figure>
-          <ul>
-            <li>Habilidade: Visão e Precisão</li>
-            <li>Motivo: Passes perfeitos </li>
-          </ul>
-        </article>
-        <!-- <article class="player-card wishlist-card">
-          <figure>
-            <img class="profilePic" src="https://i.pinimg.com/564x/05/58/a6/0558a6709a930d989409e08b981d9169.jpg" alt="Bachira Meguru" />
-            <figcaption>Bachira Meguru</figcaption>
-          </figure>
-          <ul>
-            <li>Habilidade: Drible Monster</li>
-            <li>Motivo: Quebrar defesas fechadas</li>
-          </ul>
-        </article> -->
-      </div>
-    </section>
-
-    <section id="desempenho" class="section">
-      <h2>Melhor Desempenho</h2>
-      <article>
-        <h3>Michael Kaiser - O Imperador</h3>
-        <p>Kaiser demonstrou uma habilidade insana, marcando gols incríveis com seu "Kaiser Impact". Sua visão de jogo e capacidade de prever os movimentos adversários o colocam como a estrela indiscutível do Bastard München, desafiando constantemente os limites do que é possível no futebol.</p>
-      </article>
-    </section>
-
-    <section id="contato" class="section">
-      <h2>Contato</h2>
-      <p>Quer compartilhar uma ideia ou sugestão? Preencha o formulário abaixo.</p>
-
-      <form action="/submit-form" method="post">
-        <div class="form-group">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required>
-        </div>
-
-        <div class="form-group">
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-
-        <div class="form-group">
-          <label for="telefone">Telefone:</label>
-          <input type="tel" id="telefone" name="telefone">
-        </div>
-
-        <div class="form-group">
-          <label for="assunto">Assunto:</label>
-          <select name="assunto" id="assunto">
-            <option value="sugestao">Sugestões</option>
-            <option value="outros">Outros</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="mensagem">Mensagem:</label>
-          <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
-        </div>
-
-        <div class="form-group-check">
-          <input type="checkbox" id="inscricao" name="inscricao">
-          <label for="inscricao">Deseja receber novidades por e-mail?</label>
-        </div>
-
-        <input type="submit" value="Enviar" class="submit-btn">
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-content">
-      <address>
-        <strong>Bastard München</strong><br>
-        <a href="mailto:contato@bastardm.com">bastard@bastard.com</a><br>
-        <a href="tel:+498912345678">+55 (48)4002-8922</a>
-      </address>
-
-      <p>&copy; 2026 Bastard München. Direitos reservados a Stewart N.</p>
-    </div>
-  </footer>
-</body>
-
-</html>
+<body class="min-h-screen bg-ink text-zinc-100 selection:bg-gold selection:text-black">
+  <header class="sticky top-0 z-30 border-b border-white/10 bg-black/85 backdrop-blur"><div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4"><a href="#inicio" class="flex items-center gap-3"><b class="grid h-10 w-10 place-items-center border border-gold bg-bastard text-lg italic">BM</b><span><small class="block font-bold uppercase tracking-[.28em] text-gold">Blue Lock</small><b class="text-lg uppercase">Bastard München</b></span></a><nav class="hidden gap-6 text-xs font-bold uppercase tracking-wider text-zinc-400 md:flex"><a href="#elenco" class="hover:text-gold">Elenco</a><a href="#destaque" class="hover:text-gold">Destaque</a><a href="#contato" class="hover:text-gold">Contato</a></nav><b class="border border-gold/50 px-3 py-1 text-xs text-gold">v0.3</b></div></header>
+  <main id="inicio">
+    <section class="overflow-hidden border-b border-white/10 bg-[radial-gradient(circle_at_80%_20%,rgba(157,28,46,.45),transparent_28%),linear-gradient(135deg,#09090b,#18181b)]"><div class="mx-auto grid max-w-7xl gap-12 px-5 py-20 md:grid-cols-[1.35fr_.65fr] md:py-28"><div><p class="mb-5 text-xs font-bold uppercase tracking-[.35em] text-gold">Neo Egoist League • Alemanha</p><h1 class="text-5xl font-black uppercase leading-[.88] tracking-tighter sm:text-7xl">Lógica. <span class="text-bastard">Ego.</span><br>Vitória.</h1><p class="mt-7 max-w-xl leading-7 text-zinc-400">A casa de jogadores que transformam ambição em números no placar. Conheça o elenco do Bastard München.</p><a href="#elenco" class="mt-9 inline-flex bg-gold px-6 py-3 text-sm font-black uppercase text-black hover:bg-white">Ver elenco&nbsp; ↓</a></div><div class="grid grid-cols-2 gap-px self-end border border-white/10 bg-white/10 text-center"><div class="bg-zinc-950 p-5"><strong id="player-count" class="block text-3xl text-gold">11</strong><small class="uppercase tracking-widest text-zinc-500">Jogadores</small></div><div class="bg-zinc-950 p-5"><strong class="block text-3xl text-gold">01</strong><small class="uppercase tracking-widest text-zinc-500">Objetivo</small></div><p class="col-span-2 bg-zinc-950 p-5 text-xs font-bold uppercase tracking-[.2em] text-zinc-400">"O melhor do mundo não espera espaço. Ele cria."</p></div></div></section>
+    <section id="elenco" class="mx-auto max-w-7xl px-5 py-20"><div class="mb-10 flex flex-wrap items-end justify-between gap-4"><div><p class="text-xs font-bold uppercase tracking-[.3em] text-bastard">Squad list</p><h2 class="mt-2 text-4xl font-black uppercase">Elenco oficial</h2></div><p class="max-w-sm text-sm text-zinc-500">Números confirmados exibidos na camisa. Os marcados com <b class="text-zinc-300">#</b> aguardam definição.</p></div><div id="players-grid" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"></div></section>
+    <section id="destaque" class="border-y border-white/10 bg-zinc-950"><div class="mx-auto grid max-w-7xl gap-10 px-5 py-20 md:grid-cols-2 md:items-center"><div><p class="text-xs font-bold uppercase tracking-[.3em] text-gold">Player spotlight</p><h2 class="mt-3 text-4xl font-black uppercase">O Imperador<br><span class="text-bastard">Michael Kaiser</span></h2></div><p class="border-l-2 border-bastard pl-6 text-lg leading-8 text-zinc-400">O atacante que domina a área com o Kaiser Impact. Visão, finalização e um ego impossível de ignorar.</p></div></section>
+    <section id="contato" class="mx-auto max-w-7xl px-5 py-20"><div class="grid gap-8 border border-white/10 bg-zinc-900 p-7 md:grid-cols-[1fr_1.4fr]"><div><p class="text-xs font-bold uppercase tracking-[.3em] text-bastard">Contato</p><h2 class="mt-3 text-3xl font-black uppercase">Envie sua visão.</h2><p class="mt-4 text-sm leading-6 text-zinc-500">Sugestões para a próxima evolução do time são bem-vindas.</p></div><form class="grid gap-4" action="#contato"><input class="border border-white/10 bg-black px-4 py-3 focus:border-gold" placeholder="Seu nome" required><input class="border border-white/10 bg-black px-4 py-3 focus:border-gold" type="email" placeholder="Seu e-mail" required><textarea class="min-h-28 border border-white/10 bg-black px-4 py-3 focus:border-gold" placeholder="Sua mensagem" required></textarea><button class="w-fit bg-bastard px-6 py-3 text-xs font-black uppercase hover:bg-gold hover:text-black">Enviar mensagem</button></form></div></section>
+  </main><footer class="border-t border-white/10 px-5 py-8 text-center text-xs text-zinc-600">© 2026 Bastard München · Blue Lock Fan Project · Versão 0.3</footer>
+  <script>
+    const players=[['#','Michael Kaiser','Atacante','Imperador','Alemanha','from-amber-300 to-yellow-600'],['#','Yoichi Isagi','Meia-atacante','Egoísta','Japão','from-sky-300 to-blue-700'],['#','Rensuke Kunigami','Atacante','Herói Caído','Japão','from-orange-300 to-red-700'],['9','Noel Noa','Centroavante','Master','França','from-stone-100 to-stone-500'],['8','Alexis Ness','Meia','Mago','Alemanha','from-violet-300 to-indigo-700'],['99','Gin Gagamaru','Goleiro','Guardião','Japão','from-emerald-300 to-teal-700'],['15','Kenyu Yukimiya','Lateral','Speed Cut','Japão','from-fuchsia-300 to-pink-700'],['16','Ranze Kurona','Lateral','Planeta','Japão','from-cyan-300 to-blue-700'],['69','Jin Kiyora','Meia','Breakdance','Japão','from-rose-300 to-red-700'],['22','Jingo Raichi','Volante','Sexy Football','Japão','from-lime-300 to-green-700'],['23','Yo Hiori','Meia','Ponta Azul','Japão','from-blue-200 to-indigo-800']];
+    document.querySelector('#player-count').textContent=players.length;document.querySelector('#players-grid').innerHTML=players.map(p=>`<article class="relative overflow-hidden border border-white/10 bg-zinc-900/70 p-5 transition hover:-translate-y-1 hover:border-gold/70"><div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r ${p[5]}"></div><div class="flex items-start justify-between gap-4"><b class="grid h-16 w-16 place-items-center rounded-full bg-gradient-to-br ${p[5]} text-2xl text-black">${p[0]}</b><small class="border border-white/10 px-2 py-1 uppercase tracking-widest text-zinc-500">${p[4]}</small></div><h3 class="mt-7 text-2xl font-black uppercase leading-none">${p[1]}</h3><p class="mt-2 text-sm font-semibold text-gold">${p[2]}</p><div class="mt-5 border-t border-white/10 pt-4 text-xs uppercase tracking-widest text-zinc-500"><span class="text-zinc-400">Codinome</span> · ${p[3]}</div></article>`).join('');
+  </script>
+</body></html>
